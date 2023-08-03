@@ -1,0 +1,166 @@
+appname: QueueWatcher Monitor
+elk:
+   host: localhost
+   port: 9200
+
+logger:
+   location: /apps/logs/queuewatcher
+   logname: queuewatcher_monitor
+   filename: queue_watcher_working_threads.log
+
+nodelist:
+ - EDI_105
+ - EDI_106
+ - EAI_100
+ - EAI_101
+ - EAI_102
+ - EAI_103
+ - EAI_104
+ - QA_135
+ - QA_136
+ - QA_98
+ - QA_123
+ - QA_125
+ - QA_81
+ - QA_82
+
+
+QA_81:
+   host: 172.31.165.81
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_edi_heapmemory_81
+        working_threads: qa_edi_workingthreads_81
+        
+QA_82:
+   host: 172.31.165.82
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_edi_heapmemory_82
+        working_threads: qa_edi_workingthreads_82
+        
+QA_135:
+   host: 172.31.165.135
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_eai_heapmemory_135
+        working_threads: qa_eai_workingthreads_135  
+        
+QA_136:
+   host: 172.31.165.136
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_eai_heapmemory_136
+        working_threads: qa_eai_workingthreads_136
+        
+QA_98:
+   host: 172.31.165.98
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_eai_heapmemory_98
+        working_threads: qa_eai_workingthreads_98
+        
+QA_123:
+   host: 172.31.165.123
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_eai_heapmemory_123
+        working_threads: qa_eai_workingthreads_123   
+        
+QA_125:
+   host: 172.31.165.125
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: dMr7xxmB+qx/5bgLLl+ANHwOhSNCiI4XQ1d/1+xRHiMu4fyeO4pqcjSVNPGKvD80
+   index:
+        heap_memory: qa_eai_heapmemory_125
+        working_threads: qa_eai_workingthreads_125
+        
+EAI_100:
+   host: 172.22.223.100
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_eai_heapmemory_100
+        working_threads: prod_eai_workingthreads_100
+        
+EAI_101:
+   host: 172.22.223.101
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_eai_heapmemory_101
+        working_threads: prod_eai_workingthreads_101   
+        
+EAI_102:
+   host: 172.22.223.102
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_eai_heapmemory_102
+        working_threads: prod_eai_workingthreads_102 
+        
+EAI_103:
+   host: 172.22.223.103
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_eai_heapmemory_103
+        working_threads: prod_eai_workingthreads_103
+        
+EAI_104:
+   host: 172.22.223.104
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_eai_heapmemory_104
+        working_threads: prod_eai_workingthreads_104
+        
+EDI_105:
+   host: 172.22.223.105
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_edi_heapmemory_105
+        working_threads: prod_edi_workingthreads_105
+
+EDI_106:
+   host: 172.22.223.106
+   port: 5080
+   username: C103048
+   secretkey: AbCdEf2O!7GhIjKl
+   password: kTryRruq9ql5ncNLnHpiG5umPTLffEWhDl3aYqCLjC9wN/RBql3rY4I0CKB8Cx+y
+   index:
+        heap_memory: prod_edi_heapmemory_106
+        working_threads: prod_edi_workingthreads_106

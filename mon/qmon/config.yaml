@@ -1,0 +1,43 @@
+appname: QueueWatcher Monitor
+
+elk:
+   host: localhost
+   port: 9200
+
+logger:
+   location: /apps/logs/qmon
+   logname: queuewatcher_monitor
+   filename: queue_watcher_adiss_dev.log
+
+settings:
+   delay: 60
+
+nodelist:
+# - si_223
+ - si_186
+
+si_223:
+   host: 192.168.168.223
+   port: 9000
+   username: admin
+   secretkey: AbCdEf2O!7GhIjKl
+   password: VXJZ26BM3FenkQFbRTopHFgvKtTNOcasueTjRK127+naKmnBbzroK6S2EZVyESsF
+   index:
+        heap_memory: qa_edi_heapmemory_223
+        working_threads: qa_edi_workingthreads_223
+        thread_pool_info: qa_edi_thread_pool_info_223
+        db_pool_info: qa_edi_db_pool_info_223
+
+
+si_186:
+   host: 192.168.168.186
+   port: 8000
+   username: admin
+   secretkey: AbCdEf2O!7GhIjKl
+   password: VXJZ26BM3FenkQFbRTopHFgvKtTNOcasueTjRK127+naKmnBbzroK6S2EZVyESsF
+   index:
+        heap_memory: qa_edi_heapmemory_186
+        working_threads: qa_edi_workingthreads_186
+        thread_pool_info: qa_edi_thread_pool_info_186
+        db_pool_info: qa_edi_db_pool_info_186
+

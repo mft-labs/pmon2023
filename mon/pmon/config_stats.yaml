@@ -1,0 +1,31 @@
+appname: System Monitor
+
+elk:
+   host: localhost
+   port: 9200
+
+settings:
+  delay: 60
+
+logger:
+   location: /apps/logs/pmon
+   logname: process_monitor
+   filename: process_monitor_.log
+
+processfiles:  
+  - chromebrowser
+
+chromebrowser: c:/apps/pytools/chrome_process.txt
+
+index:
+  VirtualMemory: virtual_memory_stats
+  SwapMemory: swap_memory_stats
+  CpuUsage: cpu_usage_stats
+  NetIOStats: net_io_stats
+  DiskIOStats: disk_io_stats
+  DiskUsageStats: disk_usage_stats
+  ProcessCpuInfoStats: process_cpu_stats
+  CurrentProcessCpuInfoStats: current_process_cpu_stats
+  ProcessConnectionsStats: process_connection_stats
+  CurrentProcessMemoryInfoStats: current_process_memory_info_stats
+  ProcessMemoryInfoStats: process_memory_info_stats

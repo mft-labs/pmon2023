@@ -1,0 +1,9 @@
+Supporting deployments with flexible selection
+
+-cf -- Provide the configuration file to be used (Mandatory)
+-hg  -- Used to specify Hosts Group (Optional)
+-hl  -- Used to specify comma separated hosts list provided in config file (Optional)
+
+Either one from these two -hg and -hl required to be specified
+
+-dg -- Used to specify comma separated deployments (Mandatory)

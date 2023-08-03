@@ -1,0 +1,50 @@
+appname: NT Deploy
+
+hosts:
+  - host1
+  - si_223
+  
+host1:
+  host: 192.168.168.186
+  port: 8000
+  username: admin
+  secretkey: AbCdEf2O!7GhIjKl
+  password: DANuhGocHL3LyC9VyNIMQAO/Nf9dpni/zojzcxi4Hr6UOEZ9cHkQFMd5IUmQ078D
+
+si_223:
+   host: 192.168.168.223
+   port: 9000
+   username: admin
+   secretkey: AbCdEf2O!7GhIjKl
+   password: DANuhGocHL3LyC9VyNIMQAO/Nf9dpni/zojzcxi4Hr6UOEZ9cHkQFMd5IUmQ078D
+
+deploy1:
+  - function_1
+  - function_3
+  - function_2
+
+
+deploy2:
+  - function_1
+  - function_2
+  - function_3
+
+deploy3:
+  - function_3
+  - function_1
+  - function_2
+
+function_1:
+  - cd /home
+  - ls
+
+function_2:
+  - pwd
+
+function_3:
+  - cd /tmp
+  - pwd
+
+
+
+
